@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="IaaS server icon">
+  <rect width="120" height="120" rx="16" fill="#e8f1fd"/>
+  <g fill="#1e6fd9">
+    <rect x="25" y="22" width="70" height="22" rx="4"/>
+    <rect x="25" y="49" width="70" height="22" rx="4"/>
+    <rect x="25" y="76" width="70" height="22" rx="4"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="36" cy="33" r="3"/><circle cx="36" cy="60" r="3"/><circle cx="36" cy="87" r="3"/>
+    <rect x="50" y="31" width="38" height="4" rx="2"/><rect x="50" y="58" width="38" height="4" rx="2"/><rect x="50" y="85" width="38" height="4" rx="2"/>
+  </g>
+</svg>

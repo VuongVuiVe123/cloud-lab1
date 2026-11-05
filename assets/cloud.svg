@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Cloud illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4facfe"/>
+      <stop offset="1" stop-color="#00f2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" rx="20" fill="url(#sky)"/>
+  <g fill="#ffffff">
+    <circle cx="150" cy="130" r="55"/>
+    <circle cx="215" cy="105" r="65"/>
+    <circle cx="275" cy="140" r="50"/>
+    <rect x="95" y="135" width="235" height="55" rx="27"/>
+  </g>
+  <g fill="#1e6fd9">
+    <rect x="165" y="140" width="70" height="8" rx="4"/>
+    <rect x="165" y="156" width="70" height="8" rx="4"/>
+    <circle cx="250" cy="144" r="3"/>
+    <circle cx="250" cy="160" r="3"/>
+  </g>
+</svg>

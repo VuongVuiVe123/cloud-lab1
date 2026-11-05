@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="PaaS platform icon">
+  <rect width="120" height="120" rx="16" fill="#e8f1fd"/>
+  <g fill="#1e6fd9">
+    <rect x="20" y="75" width="80" height="20" rx="4"/>
+    <rect x="30" y="50" width="60" height="20" rx="4" opacity=".75"/>
+    <rect x="40" y="25" width="40" height="20" rx="4" opacity=".5"/>
+  </g>
+  <path d="M52 32 l-8 8 8 8 M68 32 l8 8 -8 8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
