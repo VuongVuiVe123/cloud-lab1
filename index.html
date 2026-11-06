@@ -3,95 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My First Cloud Website - Lab 01, Introduction to Cloud Computing, by Nguyễn Đăng Vương (24110151).">
   <title>My First Cloud Website</title>
+  <link rel="icon" href="assets/cloud.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-inner">
-      <h1>My First Cloud Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#cloud">Cloud Computing</a></li>
-          <li><a href="#services">Cloud Services</a></li>
-          <li><a href="#deployment">Deployment</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="app">
 
-  <div class="hero">
-    <img src="assets/cloud.svg" alt="Cloud computing illustration">
-  </div>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <ul class="info-list">
-        <li><strong>Full name:</strong> Nguyễn Đăng Vương</li>
-        <li><strong>Student ID:</strong> 24110151</li>
-        <li><strong>Course:</strong> Introduction to Cloud Computing</li>
-      </ul>
-      <p>I am a student learning the fundamentals of cloud computing. This website is my first
-      project for Lab 01, where I build a simple static website and publish it to the cloud.</p>
-    </section>
-
-    <section id="cloud">
-      <h2>Cloud Computing</h2>
-      <p>Cloud computing is a way of using computing resources such as servers, storage,
-      databases and networking through the internet instead of owning and maintaining physical
-      hardware ourselves. A provider runs large data centers, and customers rent only the
-      capacity they need, paying according to their actual usage. This model brings many
-      benefits: resources can be created within minutes, applications can scale up when traffic
-      grows and scale down when it drops, and the costs of buying and maintaining equipment are
-      greatly reduced. Cloud services are also available from anywhere with an internet
-      connection, which makes teamwork and global access much easier for individuals,
-      companies and schools.</p>
-    </section>
-
-    <section id="services">
-      <h2>Cloud Services</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="assets/iaas.svg" alt="IaaS icon">
-          <h3>IaaS</h3>
-          <p><strong>Infrastructure as a Service</strong> provides virtual machines, storage and
-          networks. The user manages the operating system and applications.</p>
-          <p><em>Examples:</em> Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.</p>
-        </article>
-        <article class="card">
-          <img src="assets/paas.svg" alt="PaaS icon">
-          <h3>PaaS</h3>
-          <p><strong>Platform as a Service</strong> provides a ready-made environment to build and
-          run applications without managing servers or the operating system.</p>
-          <p><em>Examples:</em> AWS Elastic Beanstalk, Google App Engine, Heroku.</p>
-        </article>
-        <article class="card">
-          <img src="assets/saas.svg" alt="SaaS icon">
-          <h3>SaaS</h3>
-          <p><strong>Software as a Service</strong> delivers complete applications over the
-          internet that users simply open and use in a browser.</p>
-          <p><em>Examples:</em> Google Workspace (Gmail, Docs), Microsoft 365, Dropbox.</p>
-        </article>
+    <!-- Left sidebar: identity + vertical navigation -->
+    <aside class="side">
+      <a class="brand" href="#top">
+        <img src="assets/cloud.svg" alt="Cloud computing illustration" width="120" height="120">
+        <h1>My First Cloud Website</h1>
+      </a>
+      <div class="id">
+        <p><b>Nguyễn Đăng Vương</b></p>
+        <p>Student ID: <b>24110151</b></p>
+        <p>Introduction to Cloud Computing</p>
       </div>
-    </section>
+      <nav aria-label="Main">
+        <a href="#about"><i>01</i> About Me</a>
+        <a href="#cloud"><i>02</i> Cloud Computing</a>
+        <a href="#services"><i>03</i> Cloud Services</a>
+        <a href="#deployment"><i>04</i> Deployment</a>
+      </nav>
+      <p class="side-foot"><span class="dot"></span> Live over HTTPS</p>
+    </aside>
 
-    <section id="deployment">
-      <h2>Deployment Information</h2>
-      <ul class="info-list">
-        <li><strong>Selected option:</strong> B &ndash; GitHub Pages</li>
-        <li><strong>Repository:</strong> cloud-lab1 (public)</li>
-        <li><strong>Branch:</strong> main (root)</li>
-        <li><strong>Public URL:</strong>
-          <a href="https://VuongVuiVe123.github.io/cloud-lab1/">https://VuongVuiVe123.github.io/cloud-lab1/</a></li>
-      </ul>
-      <p>The site is plain HTML and CSS, with no backend or database, and is served over HTTPS.</p>
-    </section>
-  </main>
+    <!-- Right: bento grid of tiles -->
+    <main id="top" class="grid">
 
-  <footer>
-    <p>&copy; 2026 Nguyễn Đăng Vương &ndash; 24110151 &ndash; Introduction to Cloud Computing</p>
-  </footer>
+      <section class="tile t-about" id="about">
+        <h2><i>01</i> About Me</h2>
+        <dl>
+          <dt>Full name</dt><dd>Nguyễn Đăng Vương</dd>
+          <dt>Student ID</dt><dd>24110151</dd>
+          <dt>Course</dt><dd>Introduction to Cloud Computing</dd>
+        </dl>
+        <p>I am a student learning the fundamentals of cloud computing. This website is my first
+        project for Lab 01, where I build a simple static website and publish it to the cloud so that
+        anyone can open it from a browser, not only from my own computer.</p>
+      </section>
+
+      <figure class="tile t-art">
+        <img src="assets/cloud.svg" alt="Cloud computing illustration">
+        <figcaption>Lab 01 &middot; static site</figcaption>
+      </figure>
+
+      <section class="tile t-cloud" id="cloud">
+        <h2><i>02</i> Cloud Computing</h2>
+        <p>Cloud computing is a way of using computing resources such as servers, storage,
+        databases and networking through the internet instead of owning and maintaining physical
+        hardware ourselves. A provider runs large data centers, and customers rent only the
+        capacity they need, paying according to their actual usage. This model brings many
+        benefits: resources can be created within minutes, applications can scale up when traffic
+        grows and scale down when it drops, and the costs of buying and maintaining equipment are
+        greatly reduced. Cloud services are also available from anywhere with an internet
+        connection, which makes teamwork and global access much easier for individuals,
+        companies and schools.</p>
+      </section>
+
+      <div class="tile t-stat s1"><b>Minutes</b><span>to create resources</span></div>
+      <div class="tile t-stat s2"><b>Up / Down</b><span>scales with traffic</span></div>
+      <div class="tile t-stat s3"><b>Pay-per-use</b><span>no hardware to buy</span></div>
+
+      <h2 class="band" id="services"><i>03</i> Cloud Services</h2>
+
+      <article class="tile t-svc c1">
+        <img src="assets/iaas.svg" alt="IaaS icon">
+        <h3>IaaS</h3>
+        <p><strong>Infrastructure as a Service</strong> provides virtual machines, storage and
+        networks. The user manages the operating system and applications.</p>
+        <p><em>Examples:</em> Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.</p>
+      </article>
+      <article class="tile t-svc c2">
+        <img src="assets/paas.svg" alt="PaaS icon">
+        <h3>PaaS</h3>
+        <p><strong>Platform as a Service</strong> provides a ready-made environment to build and
+        run applications without managing servers or the operating system.</p>
+        <p><em>Examples:</em> AWS Elastic Beanstalk, Google App Engine, Heroku.</p>
+      </article>
+      <article class="tile t-svc c3">
+        <img src="assets/saas.svg" alt="SaaS icon">
+        <h3>SaaS</h3>
+        <p><strong>Software as a Service</strong> delivers complete applications over the
+        internet that users simply open and use in a browser.</p>
+        <p><em>Examples:</em> Google Workspace (Gmail, Docs), Microsoft 365, Dropbox.</p>
+      </article>
+
+      <section class="tile t-dep" id="deployment">
+        <h2><i>04</i> Deployment Information</h2>
+        <ul>
+          <li><b>Selected option</b> B &ndash; GitHub Pages</li>
+          <li><b>Repository</b> cloud-lab1 (public)</li>
+          <li><b>Branch</b> main (root)</li>
+          <li class="url"><b>Public URL</b>
+            <a href="https://VuongVuiVe123.github.io/cloud-lab1/">https://VuongVuiVe123.github.io/cloud-lab1/</a></li>
+        </ul>
+        <p>The site is plain HTML and CSS, with no backend or database, and is served over HTTPS.</p>
+      </section>
+
+      <footer class="tile t-foot">
+        <p>&copy; 2026 Nguyễn Đăng Vương &ndash; 24110151 &ndash; Introduction to Cloud Computing</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
